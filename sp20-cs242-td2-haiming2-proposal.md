@@ -86,7 +86,7 @@ Functionality (15 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Render user page with login page | 6 | <ul><li>0 points: no user page</li><li>+2 points: users can successfully login</li><li>+2 points: users can add weight for the day, and recorded in the database</li><li>+1 points: users can add calories for the day, and recorded in the database</li></ul>
-Data analysis for weight and calories | 4 | <ul><li>+2 points: graph for weight</li><li>+2 points: graph for calories</li></ul>
+Data analysis for weight and calories | 6 | <ul><li>+3 points: graph for weight</li><li>+3 points: graph for calories</li></ul>
 Search recipes | 3 | <ul><li>0 points: no search functionality in home page</li><li>2 points: partially works</li><li>3 points: works by searching keywords in recipe name</li></ul>
 
 Test (10 total)  
