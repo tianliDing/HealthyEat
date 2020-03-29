@@ -25,7 +25,9 @@ The following recipe information will be scraped from the website mentioned abov
 - ratings
 - ingredient
 - cooking methods  
- These data will be stored as JSON format in local machine.
+ These data will be stored as JSON format in local machine.  
+
+Search functionality will be complete for searching recipes.
 
 The user information will include:
 - username
@@ -33,13 +35,12 @@ The user information will include:
 - weight(self report)
 - calories(self report)  
 These information will be stored in MongoDB.
-
-Search functionality will be complete for searching recipe.  
+  
 User weight and calories reported will be visualized in different graphs.
 
 ### Scope of the project
 - Since this website only have Chinese food recipes, it may not fit those who do not eat Chinese food. I will consider to include more type of food recipes in the future.
-- This project mainly use what we have learned before, including web scraper, database, api setup, data visualization. Therefore, I think I should be able to handle them. However, I am not quite specialized with React.js, but I have learned javascript from React Native. Therefore, I think it will be a challenge but not very hard.
+- This project mainly use what we have learned before, including web scraper, database, API setup, data visualization. Therefore, I think I should be able to handle them. However, I am not quite specialized with React.js, but I have learned javascript from React Native. Therefore, I think it will be a challenge but not very hard.
 
 ## Sketch
 ![Sketch](Sketch.png)
