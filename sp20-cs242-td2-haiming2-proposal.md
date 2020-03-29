@@ -46,6 +46,14 @@ These information will be stored in MongoDB.
 ### First week (backend)
 Category | Total Score Allocated | Detailed Rubrics
 -------- | --------------------- | ----------------
-Scrape data | 5 | <ul><li>0 points: lack of any form of a web scraper</li><li>2 points: scrapper works but cannot collect 100+ recipes</li><li>5 points: complete 100+ recipes saved in local machine</li></ul>
-Set up MongoDB storing User Information | 3 | - 0 points: no database set up - 1 points: system setup with a database - 2 points: system can read from the database without errors - 3 points: system can write from the database without errors
+Scrape data | 5 | <ul><li>0 points: lack of any form of a web scraper</li><li>2 points: scrapper works but cannot scrape 100+ recipes</li><li>5 points: complete 100+ recipes saved in local machine</li></ul>
+
+Set up MongoDB storing User Information | 5 | <ul><li>0 points: no database set up</li><li>1 points: system setup with a database</li><li>2 points: system can read from the database without errors</li><li>3 points: system can insert information into the database without errors</li><li>4 points: system can delete information from the database without errors</li><li>5 points: system can edit information into the database without errors</li></ul>
+
+unittest | 5 | <ul><li>0 points: no test</li><li>+1 point for every two tests</li></ul>
+manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>2 pts for test plans that contained only some content and can be further improved (~8 pages)</li><li>4 pts for test plans that contained most of the content (~10 pages)</li><li>5 pts for well-composed test plans covering all aspects of the system(~12 pages)</li></ul>
+
+
+
+store 20 users in database | 3 | <ul><li>0 points: no real users in dababase</li><li>1 points: 5 real users</li><li>2 points: system can read from the database without errors</li><li>3 points: system can write from the database without errors</li></ul>
 
