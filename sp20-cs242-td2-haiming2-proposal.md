@@ -17,21 +17,41 @@ Target Audience: People interested in Chinese food, and need of recording weight
 
 ## Functional Specification
 ### Features:
-- First, the following information will be scraped from the website mentioned above:
-o	dish name
-o	prep time
-o	cooking time
-o	total time
-o	ratings
-o	ingredient
-o	cooking methods 
+First, the following information will be scraped from the website mentioned above:
+- dish name
+- prep time
+- cooking time
+- total time
+- ratings
+- ingredient
+- cooking methods 
 These data will be stored as JSON format in local machine.
-User information will be stored in MongoDB.
+
+Second, the developed website allow users to search for the keyword of the recipe.
+Third, the user information will include:
+- username
+- password
+- weight(self report)
+- calories(self report)
+These information will be stored in MongoDB.
 
 ### Scope of the project
-- Limitations: Since this website only have Chinese food recipes, it may not fit those who do not eat Chinese food. I will consider to include more type of food recipes.
+- Limitations: Since this website only have Chinese food recipes, it may not fit those who do not eat Chinese food. I will consider to include more type of food recipes in the future.
 
 ## Sketch
 ![Sketch](Sketch.png)
 
 ## Weekly BreakDown
+### First week (backend)
+Category | Total Score Allocated | Detailed Rubrics
+-------- | --------------------- | ----------------
+Scrape data | 5 | 
+- 0 points: lack of any form of a web scraper
+- 2 points: scrapper works but cannot collect 100+ recipes
+- 5 points: complete 100+ recipes saved in local machine
+Set up MongoDB storing User Information | 3 |
+- 0 points: no database set up
+- 1 points: system setup with a database 
+- 2 points: system can read from the database without errors
+- 3 points: system can write from the database without errors
+
