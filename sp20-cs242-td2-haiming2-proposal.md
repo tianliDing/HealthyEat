@@ -27,7 +27,7 @@ The following recipe information will be scraped from the website mentioned abov
 - cooking methods  
  These data will be stored as JSON format in local machine.  
 
-Search functionality will be complete for searching recipes.
+Search functionality will be complete for searching recipes in home page.
 
 The user information will include:
 - username
@@ -36,7 +36,7 @@ The user information will include:
 - calories(self report)  
 These information will be stored in MongoDB.
   
-User weight and calories reported will be visualized in different graphs.
+User weight and calories reported will be visualized in different graphs in user page.
 
 ### Scope of the project
 - Since this website only have Chinese food recipes, it may not fit those who do not eat Chinese food. I will consider to include more type of food recipes in the future.
