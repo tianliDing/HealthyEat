@@ -46,6 +46,6 @@ These information will be stored in MongoDB.
 ### First week (backend)
 Category | Total Score Allocated | Detailed Rubrics
 -------- | --------------------- | ----------------
-Scrape data | 5 | - 0 points: lack of any form of a web scraper - 2 points: scrapper works but cannot collect 100+ recipes - 5 points: complete 100+ recipes saved in local machine
+Scrape data | 5 | <li> 0 points: lack of any form of a web scraper </li><li> 2 points: scrapper works but cannot collect 100+ recipes</li><li> 5 points: complete 100+ recipes saved in local machine</li>
 Set up MongoDB storing User Information | 3 | - 0 points: no database set up - 1 points: system setup with a database - 2 points: system can read from the database without errors - 3 points: system can write from the database without errors
 
