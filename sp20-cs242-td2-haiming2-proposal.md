@@ -27,8 +27,6 @@ First, the following information will be scraped from the website mentioned abov
 - cooking methods 
 These data will be stored as JSON format in local machine.
 
-Second, the developed website allow users to search for the keyword of the recipe.  
-
 Third, the user information will include:
 - username
 - password
@@ -87,8 +85,8 @@ Functionality (15 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Render user page with login page | 6 | <ul><li>0 points: no user page</li><li>+2 points: users can successfully login</li><li>+2 points: users can add weight for the day, and recorded in the database</li><li>+1 points: users can add calories for the day, and recorded in the database</li></ul>
-Data analysis for weight and calories | 6 | <ul><li>+3 points: graph for weight</li><li>+3 points: graph for calories</li></ul>
-store 20 real users information in database | 3 | <ul><li>0 points: no real information in dababase</li><li>1 points: 5 real users</li><li>2 points: system can read from the database without errors</li><li>3 points: system can write from the database without errors</li></ul>
+Data analysis for weight and calories | 4 | <ul><li>+2 points: graph for weight</li><li>+2 points: graph for calories</li></ul>
+Search recipes | 3 | <ul><li>0 points: no search functionality in home page</li><li>2 points: partially works</li><li>3 points: works by searching keywords in recipe name</li></ul>
 
 Test (10 total)  
 
