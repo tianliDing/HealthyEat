@@ -24,8 +24,8 @@ First, the following information will be scraped from the website mentioned abov
 - total time
 - ratings
 - ingredient
-- cooking methods 
-These data will be stored as JSON format in local machine.
+- cooking methods  
+ These data will be stored as JSON format in local machine.
 
 Third, the user information will include:
 - username
