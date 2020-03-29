@@ -5,15 +5,15 @@ This is a website for CS242 final project
 
 ## Abstract
 ### Project Purpose & Motivation
-Due to the coronavirus, everybody is asked to stay at home. Therefore, I started to cook for myself everyday at home. However, it is hard to cook for newbies like me without recipe. Hence, I am planning to develop a platform with hundreds of recipes. Besides, many girls, including me, care about their weight, especially in the situation that we can barely go out for walking and working out. I decide to add functionalities helping to record, track weight and/or calculate total calories for each day, so that people who need control weight, like athletes, could use it for documentation.  
+Due to the coronavirus, everybody is asked to stay at home. Therefore, I started to cook for myself everyday at home. However, it is hard to cook for newbies like me without recipe. Hence, I am planning to develop a platform with hundreds of recipes. Besides, many girls, including me, care about their weight, especially in the situation that we can barely go out for walking and working out. I decide to add functionalities helping to record, track weight and/or track total calories for each day, so that people who need control weight, like athletes, could use it for documentation.  
 
 ## Technical Specification
-Platform: React.js 
-Programming Languages: JavaScript (Python for Flask should backend required)
-Stylistic Conventions: Airbnb JavaScript Style Guide & PEP8 Standard
-IDE: Visual Studio Code
-Tools/Interfaces: Website, a laptop will be fine
-Target Audience: People interested in Chinese food, and need of recording weight
+- Platform: React.js 
+- Programming Languages: JavaScript (Python for Flask should backend required)
+- Stylistic Conventions: Airbnb JavaScript Style Guide & PEP8 Standard
+- IDE: Visual Studio Code
+- Tools/Interfaces: Website, a laptop will be fine
+- Target Audience: People interested in Chinese food, and need of recording weight
 
 ## Functional Specification
 ### Features:
