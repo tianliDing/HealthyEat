@@ -74,7 +74,7 @@ unittest | 3 | <ul><li>0 points: no test</li><li>+1 point for every two new test
 manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~6 pages)</li><li>5 pts for test plans that contained most of the content (~8 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~10 pages)</li></ul>
 
 ### Third week (front-end user page && data visualization)
-Functionality (15 total)  
+
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 render user page with login page | 6 | <ul><li>0 points: no user page</li><li>+2 points: users can successfully login</li><li>+2 points: users can add weight for the day, and recorded in the database</li><li>+1 points: users can add calories for the day, and recorded in the database</li></ul>
