@@ -50,7 +50,11 @@ Functionality (15 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Scrape data | 5 | <ul><li>0 points: lack of any form of a web scraper</li><li>2 points: scrapper works but cannot scrape 100+ recipes</li><li>4 points: complete 100+ recipes saved in local machine</li><li>5 points: 100+ recipes in JSON format</li></ul>
-Set up MongoDB storing user information | 4 | <ul><li>0 points: no database set up</li><li>1 points: system setup with a database</li><li>2 points: system can read from the database without errors</li><li>4 points: system can write information into the database without errors</li></ul>  
+Set up MongoDB storing user information | 4 | <ul><li>0 points: no database set up</li><li>1 points: system setup with a database</li><li>2 points: system can read from the database without errors</li><li>4 points: system can write information into the database without errors</li></ul>
+Export JSON from database | 2 | <ul><li>0 points: cannot export data in JSON format</li><li>2 points: system can export JSON from the database without errors</li></ul>
+Import CSV file to database | 2 | <ul><li>0 points: cannot import CSV format data</li><li>2 points: system can import CSV file to the database without errors</li></ul>
+Solve sensitive information | 1 | Solve sensitive information saving problems for the database and other sensitive/dynamic variables
+Pylint | 1 | Shows a score 8.5/10 or above in the pylint report
 
 test (10 total)  
 
