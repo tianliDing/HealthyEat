@@ -56,12 +56,12 @@ Import CSV file to database | 2 | <ul><li>0 points: cannot import CSV format dat
 Solve sensitive information | 1 | Solve sensitive information saving problems for the database and other sensitive/dynamic variables
 Pylint | 1 | Shows a score 8.5/10 or above in the pylint report
 
-test (10 total)  
+Test (10 total)  
 
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
-unittest | 5 | <ul><li>0 points: no test</li><li>+1 point for every two tests</li></ul>
-manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~3 pages)</li><li>5 pts for test plans that contained most of the content (~4 pages)</li></ul>
+Unittest | 5 | <ul><li>0 points: no test</li><li>+1 point for every two tests</li></ul>
+Manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~3 pages)</li><li>5 pts for test plans that contained most of the content (~4 pages)</li></ul>
 
 
 ### Second week (front-end home page && recipe page)
@@ -74,25 +74,25 @@ API setup | 8 | <ul><li>0 points: no API</li><li>+2 point for each of CRUD for u
 render Home page(without search) | 4 | <ul><li>0 points: empty page</li><li>+2 point for rendering preview of recipe</li><li>+2 point for navigation between recipe page, home page and user page(could be empty in current week)</li></ul>
 render recipe page | 3 | <ul><li>0 points: no recipe page</li><li>+1 point for include each two of the information mentioned above</li></ul>
 
-test (10 total)  
+Test (10 total)  
 
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
-unittest | 3 | <ul><li>0 points: no test</li><li>+1 point for every two new tests</li></ul>
-manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~6 pages)</li><li>5 pts for test plans that contained most of the content (~8 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~10 pages)</li></ul>
+Unittest | 3 | <ul><li>0 points: no test</li><li>+1 point for every two new tests</li></ul>
+Manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~6 pages)</li><li>5 pts for test plans that contained most of the content (~8 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~10 pages)</li></ul>
 
 ### Third week (front-end user page && data visualization)
 Functionality (15 total)  
 
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
-render user page with login page | 6 | <ul><li>0 points: no user page</li><li>+2 points: users can successfully login</li><li>+2 points: users can add weight for the day, and recorded in the database</li><li>+1 points: users can add calories for the day, and recorded in the database</li></ul>
-add data analysis for weight and calories | 6 | <ul><li>+3 points: graph for weight</li><li>+3 points: graph for calories</li></ul>
-store 20 users in database | 3 | <ul><li>0 points: no real users in dababase</li><li>1 points: 5 real users</li><li>2 points: system can read from the database without errors</li><li>3 points: system can write from the database without errors</li></ul>
+Render user page with login page | 6 | <ul><li>0 points: no user page</li><li>+2 points: users can successfully login</li><li>+2 points: users can add weight for the day, and recorded in the database</li><li>+1 points: users can add calories for the day, and recorded in the database</li></ul>
+Data analysis for weight and calories | 6 | <ul><li>+3 points: graph for weight</li><li>+3 points: graph for calories</li></ul>
+store 20 real users information in database | 3 | <ul><li>0 points: no real information in dababase</li><li>1 points: 5 real users</li><li>2 points: system can read from the database without errors</li><li>3 points: system can write from the database without errors</li></ul>
 
-test (10 total)  
+Test (10 total)  
 
 Category | Score Allocated | Detailed Rubrics
 -------- | -------------- | ----------------
-unittest-Data Analysis | 3 | <ul><li>0 points: no test</li><li>+1 point for every new two tests</li></ul>
-manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~12 pages)</li><li>5 pts for test plans that contained most of the content (~14 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~16 pages)</li></ul>
+Unittest-Data Analysis | 3 | <ul><li>0 points: no test</li><li>+1 point for every new two tests</li></ul>
+Manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~12 pages)</li><li>5 pts for test plans that contained most of the content (~14 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~16 pages)</li></ul>
