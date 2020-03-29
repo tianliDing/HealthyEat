@@ -1,7 +1,7 @@
 # Healthy Eat
 By Tianli Ding (td2)  
 Moderator: Haiming Zhang (haiming2)  
-This is a mobile app for CS242 final project
+This is a website for CS242 final project
 
 ## Abstract
 ### Project Purpose & Motivation
