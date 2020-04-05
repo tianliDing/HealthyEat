@@ -38,6 +38,22 @@ These information will be stored in MongoDB.
   
 User weight and calories reported will be visualized in different graphs in user page.
 
+API endpoints:
+GET
+- find all user information with that the corresponding username: api/users?username  
+
+PUT
+- put or update the first entry of the item returned from the given attribute
+- including changing password, update weight, and calories: api/users?attr={attr_value}  
+
+POST
+- add users to the backend: api/users  
+
+DELETE
+- delete requests to remove the user from the database given username: api/users?username  
+
+Postman can be used to test API.  
+
 ### Scope of the project
 - Since this website only have Chinese food recipes, it may not fit those who do not eat Chinese food. I will consider to include more type of food recipes in the future.
 - This project mainly use what we have learned before, including web scraper, database, API setup, data visualization. Therefore, I think I should be able to handle them. However, I am not quite specialized with React.js, but I have learned javascript from React Native. Therefore, I think it will be a challenge but not very hard.
@@ -52,11 +68,10 @@ Functionality (15 total)
 
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
-Scrape data | 5 | <ul><li>0 points: lack of any form of a web scraper</li><li>2 points: scrapper works but cannot scrape 100+ recipes</li><li>4 points: complete 100+ recipes saved in local machine</li><li>5 points: 100+ recipes in JSON format</li></ul>
-Set up MongoDB storing user information | 4 | <ul><li>0 points: no database set up</li><li>1 points: system setup with a database</li><li>2 points: system can read from the database without errors</li><li>4 points: system can write information into the database without errors</li></ul>
+Scrape data | 4 | <ul><li>0 points: lack of any form of a web scraper</li><li>2 points: scrapper works but cannot scrape 100+ recipes</li><li>4 points: complete 100+ recipes saved in local machine</li></ul>
+Recipe model | 3 | <ul><li>0 points: lack of any form of a recipe model</li><li>2 points: there is one but lack of information</li><li>3 points: create a model and parse scraped data into model with complete information listed above, can be printed into terminal</li></ul>
+Set up MongoDB storing user information | 5 | <ul><li>0 points: no database set up</li><li>+1 points: system setup with a database</li><li>+1 points: system can read from the database without errors</li><li>+1 points: system can write information into the database without errors</li><li>+1 point: functional database and store user information with encrypted password</li><li>+1 point: system can import CSV file to the database without errors</li></ul>
 Export JSON from database | 2 | <ul><li>0 points: cannot export data in JSON format</li><li>2 points: system can export JSON from the database without errors</li></ul>
-Import CSV file to database | 2 | <ul><li>0 points: cannot import CSV format data</li><li>2 points: system can import CSV file to the database without errors</li></ul>
-Solve sensitive information | 1 | Solve sensitive information saving problems for the database and other sensitive/dynamic variables
 Pylint | 1 | Shows a score 8.5/10 or above in the pylint report
 
 Test (10 total)  
@@ -64,7 +79,7 @@ Test (10 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Unittest | 5 | <ul><li>0 points: no test</li><li>+1 point for every two tests</li></ul>
-Manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~3 pages)</li><li>5 pts for test plans that contained most of the content (~4 pages)</li></ul>
+Manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~3 scenarios)</li><li>5 pts for test plans that contained most of the content (~4 scenarios)</li></ul>
 
 
 ### Second week (front-end home page && recipe page)
@@ -82,7 +97,7 @@ Test (10 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Unittest | 3 | <ul><li>0 points: no test</li><li>+1 point for every two new tests</li></ul>
-Manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~6 pages)</li><li>5 pts for test plans that contained most of the content (~8 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~10 pages)</li></ul>
+Manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>+1 pt for every new added scenario</li></ul>
 
 ### Third week (front-end user page && data visualization)
 Functionality (15 total)  
@@ -90,12 +105,13 @@ Functionality (15 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Render user page with login page | 6 | <ul><li>0 points: no user page</li><li>+2 points: users can successfully login</li><li>+2 points: users can add weight for the day, and recorded in the database</li><li>+1 points: users can add calories for the day, and recorded in the database</li></ul>
-Data analysis for weight and calories | 6 | <ul><li>+3 points: graph for weight</li><li>+3 points: graph for calories</li></ul>
-Search recipes | 3 | <ul><li>0 points: no search functionality in home page</li><li>2 points: partially works</li><li>3 points: works by searching keywords in recipe name</li></ul>
+Data analysis for weight | 3 | <ul><li>+1 points: static graph</li><li>+2 points: dynamic graph</li><li>+3 points: interactive graph</ul>
+Data analysis for calories | 3 | <ul><li>+1 points: static graph</li><li>+2 points: dynamic graph</li><li>+3 points: interactive graph</ul>
+Search recipes | 3 | <ul><li>0 points: no search functionality in home page</li><li>2 points: partially works: it can search by full name of the recipe but not single keyword</li><li>3 points: works by searching keywords in recipe name</li></ul>
 
 Test (10 total)  
 
 Category | Score Allocated | Detailed Rubrics
 -------- | -------------- | ----------------
 Unittest-Data Analysis | 3 | <ul><li>0 points: no test</li><li>+1 point for every new two tests</li></ul>
-Manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~12 pages)</li><li>5 pts for test plans that contained most of the content (~14 pages)</li><li>7 pts for well-composed test plans covering all aspects of the system(~16 pages)</li></ul>
+Manual test plan| 7 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>+1pt: for every new scenario added in manual test plan</li></ul>
