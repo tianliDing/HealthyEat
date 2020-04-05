@@ -56,7 +56,7 @@ Postman can be used to test API.
 
 ### Scope of the project
 - Since this website only have Chinese food recipes, it may not fit those who do not eat Chinese food. I will consider to include more type of food recipes in the future.
-- This project mainly use what we have learned before, including web scraper, database, API setup, data visualization. Therefore, I think I should be able to handle them. However, I am not quite specialized with React.js, but I have learned javascript from React Native. Therefore, I think it will be a challenge but not very hard.
+- This project mainly use what we have learned before, including web scraper, database, API setup, data visualization. Therefore, I think I should be able to handle them. However, I am not quite specialized with React.js, but I have learned javascript from React Native. Therefore, I think it will be a challenge but still should be handle-able.
 
 ## Sketch
 ![Sketch](Sketch.png)
