@@ -17,7 +17,7 @@ Due to the coronavirus, everybody is asked to stay at home. Therefore, I started
 
 ## Functional Specification
 ### Features:
-The following recipe information will be scraped from the website mentioned above:
+The following __recipe information__ will be scraped from the website mentioned above:
 - dish name
 - prep time
 - cooking time
@@ -38,7 +38,7 @@ These information will be stored in MongoDB.
   
 User weight and calories reported will be visualized in different graphs in user page.
 
-API endpoints:
+API endpoints:  
 GET
 - find all user information with that the corresponding username: api/users?username  
 
@@ -79,7 +79,7 @@ Test (10 total)
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
 Unittest | 5 | <ul><li>0 points: no test</li><li>+1 point for every two tests</li></ul>
-Manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>3 pts for test plans that contained only some content and can be further improved (~3 scenarios)</li><li>5 pts for test plans that contained most of the content (~4 scenarios)</li></ul>
+Manual test plan| 5 | <ul><li>0 points: no manual test plan</li><li>1 pts if the test plans include only environment setup OR scenario descriptions</li><li>+1pt: for every scenarios included</li></ul>
 
 
 ### Second week (front-end home page && recipe page)
@@ -88,7 +88,7 @@ Functionality (15 total)
 
 Category | Score Allocated | Detailed Rubrics
 -------- | --------------- | ----------------
-API setup | 8 | <ul><li>0 points: no API</li><li>+2 point for each of CRUD for user infor(username and password)</li></ul>
+API setup | 8 | <ul><li>0 points: no API</li><li>+2 point for each of CRUD for user information</li></ul>
 render Home page(without search) | 4 | <ul><li>0 points: empty page</li><li>+2 point for rendering preview of recipe</li><li>+2 point for navigation between recipe page, home page and user page(could be empty in current week)</li></ul>
 render recipe page | 3 | <ul><li>0 points: no recipe page</li><li>+1 point for include each two of the information mentioned above</li></ul>
 
