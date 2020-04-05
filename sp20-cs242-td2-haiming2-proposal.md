@@ -29,7 +29,7 @@ The following __recipe information__ will be scraped from the website mentioned 
 
 Search functionality will be complete for searching recipes in home page.
 
-The user information will include:
+The __user information__ will include:
 - username
 - password
 - weight(self report)
@@ -38,7 +38,7 @@ These information will be stored in MongoDB.
   
 User weight and calories reported will be visualized in different graphs in user page.
 
-API endpoints:  
+__API endpoints__:  
 GET
 - find all user information with that the corresponding username: api/users?username  
 
