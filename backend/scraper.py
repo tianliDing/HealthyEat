@@ -63,12 +63,18 @@ class Scraper:
         return item
 
     def add_calories(self, item, info):
+        """
+        a helper function adding calories
+        """
         item['calories'] = "no details"
         if 'nutrition' in info:
             if 'calories' in info['nutrition']:
                 item['calories'] = info['nutrition']['calories']
 
     def add_cooking_methods(self, raw_method, item):
+        """
+        a helper function adding cooking methods
+        """
         for method in raw_method:
             if 'itemListElement' in method:
                 for ele in method['itemListElement']:
