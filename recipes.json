@@ -5,8 +5,8 @@
             "https://www.chinasichuanfood.com/wp-content/uploads/2017/11/Spicy-potatoes_-2.jpg"
         ],
         "prep_time": "no details",
-        "cooking_time": "PT10M",
-        "total_time": "PT25M",
+        "cooking_time": "10 mins",
+        "total_time": "25 mins",
         "ratings": "5 out of 5",
         "calories": "442 kcal",
         "ingredients": [
@@ -30,91 +30,89 @@
             "For those who love hotter version, simple serve with dried chili powders. You can simple serve with a mixed chili powder."
         ],
         "recommendation": [
-            "https://www.chinasichuanfood.com/steamed-pumpkin-buns-two-ways/",
-            "https://www.chinasichuanfood.com/twice-cooked-fish/",
-            "https://www.chinasichuanfood.com/salt-baked-chicken/"
+            "https://www.chinasichuanfood.com/how-to-make-chinese-red-oil/",
+            "https://www.chinasichuanfood.com/chinese-tea-eggs-marbled-eggs/",
+            "https://www.chinasichuanfood.com/peking-shredded-pork/"
         ]
     },
     {
-        "dish_name": "Steamed Pumpkin Buns (Two Ways)",
+        "dish_name": "How to Make Chinese Red Oil (Difficult Version)",
         "dish_image": [
-            "https://www.chinasichuanfood.com/wp-content/uploads/2017/01/steamed-pumpkin-buns-and-rice-7-copy-320x320.jpg",
-            "https://www.chinasichuanfood.com/wp-content/uploads/2017/01/steamed-pumpkin-buns-and-rice-7-copy-320x320-320x270.jpg"
+            "https://www.chinasichuanfood.com/wp-content/uploads/2013/12/Chili-oil-9.jpg"
         ],
         "prep_time": "no details",
-        "cooking_time": "PT20M",
-        "total_time": "PT140M",
+        "cooking_time": "20 mins",
+        "total_time": "30 mins",
         "ratings": "5 out of 5",
-        "calories": "80 kcal",
+        "calories": "27 kcal",
         "ingredients": [
-            "250 g pumpkin cubes",
-            "300 g all purpose flour ( , plus more for dusting)",
-            "a small pinch of salt",
-            "2-4 tbsp. sugar",
-            "2.5 tsp. instant yeast ( , 2 tsp. in summer)",
-            "150 g all-purpose flour",
-            "1 tsp. instant yeast",
-            "2 tbsp. sugar",
-            "75 g water (, or 10ml more if needed)",
-            "a tiny pinch of salt ( , around 1.5% of the dough)"
-        ],
-        "cooking_methods": [
-            "Clean the pumpkin; remove the skin and the filling, cut into small cubes.",
-            "Place all the cubes in a steamer and steam for around 20 minutes until well softened. Then blend it until really smooth. Set aside to cool down to Luke warm.",
-            "In a mixing bowl of a stand mixer, add all-purpose flour, salt, sugar and yeast then pour in pumpkin puree. Knead for 6-8 minutes until you get a smooth, elastic and soft dough. Transfer it to a bowl and cover with plastic wrapper until the dough is almost double in size.",
-            "Dust your operating board with a thin layer of flour and re-knead the dough until the surface becomes smooth again.",
-            "Divide the dough to two halves. Shape one of the two halves into a long log. Cut it into 8 small portions. Then repeat to finish the other half.",
-            "Set up the steamer by adding enough cold water to a large pot. Place the buns into a lined steamer and then count 15 minutes after the water boils. Wait for 3-5 minutes and lift the cover. Serve warm.",
-            "Make plain white dough according to Chinese steamed buns. We need half of the pumpkin dough.",
-            "Re-knead the two dough balls until smooth again and roll each one out to a large rectangle (around 20cm long and 9cm wide). Lay the pumpkin wrapper over the white one and then roll the layered wrapper up tightly. Divide the long log into two shorter ones. Take one out and slightly press the log to make it longer and tighter when rolling on the operating board.",
-            "With a sharp knife, discard the two ends and cut the remaining part into 6 equal portions. Repeat to finish all.",
-            "Set up the steamer by adding enough cold water to a large pot. Place the buns into a lined steamer and then count 15 minutes after the water boils. Wait for 3-5 minutes and lift the cover. Serve warm."
-        ],
-        "recommendation": [
-            "https://www.chinasichuanfood.com/chinese-roasted-chicken/",
-            "https://www.chinasichuanfood.com/dumpling-wrappers/",
-            "https://www.chinasichuanfood.com/pan-fried-tofu-with-egg-and-chive/"
-        ]
-    },
-    {
-        "dish_name": "Twice cooked fish",
-        "dish_image": [
-            "https://www.chinasichuanfood.com/wp-content/uploads/2017/12/twice-cooked-fish-9.jpg"
-        ],
-        "prep_time": "no details",
-        "cooking_time": "PT10M",
-        "total_time": "PT25M",
-        "ratings": "5 out of 5",
-        "calories": "418 kcal",
-        "ingredients": [
-            "1  fish fillet ( ,snakehead or other type you prefer (around 600 grams))",
-            "1 tbsp. Chinese cooking wine",
-            "1 tbsp. light soy sauce",
-            "pinch of salt",
-            "1/4 tsp. sugar",
-            "5-6  ginger sheds",
-            "cornstarch for coating",
-            "1 tbsp. cooking oil",
-            "1 tbsp. doubanjiang",
-            "1 tbsp. fermented black beans ( ,dou-chi)",
+            "100 g dried chili peppers ( ,cut into small pieces)",
+            "1 tbsp. Sichuan peppercorn",
+            "1 tbsp. white sesame seeds",
+            "2 cups oil ( ,recommend colleseed oil)",
+            "2  green onion ( ,white parts only)",
             "1  thumb ginger ( ,sliced)",
-            "2  gloves garlic ( ,sliced)",
-            "2  garlic sprouts ( ,cut into small sections)",
-            "3-4  long red peppers ( ,shredded)",
-            "4-5  scallions",
-            "1 tbsp. light soy sauce",
-            "pinch of salt"
+            "2  star anises",
+            "2  bay leaves",
+            "1  small piece of Chinese cinnamon",
+            "1  tsaoko ( ,optional)",
+            "1 small fructus amomi ( ,\u7802\u4ec1 (optional))"
         ],
         "cooking_methods": [
-            "Cut the fish into pieces around 2cm thick. Add cooking wine, ginger shreds, soy sauce, salt and sugar and massage for 1 minutes. Set aside and marinade for 10 minutes.",
-            "Add 1/4 cup of cornstarch in a bag and place the fish fillet in. Slightly shake until every piece of fish is well coated with the cornstarch. Then stand for 5-10 minutes.",
-            "Prepare a shallow pan and add 1/4 cup of oil and shallow fry the fish pieces until hardened and golden brown on surface. Transfer out.",
-            "Leave around 1 tablespoon of oil in the pan, slow down the fire and fry doubanjiang for 1 minutes until the red turns red. Add garlic, ginger and dou-chi and fry until aromatic.",
-            "Place chili peppers, scallion sections and garlic sprouts in. Fry until almost soft and return the fish, add light soy sauce and salt. Mix well. Serve immediately."
+            "Cut the dried whole chili peppers. If you want to reduce the hotness, discard part of the seeds.",
+            "Fry the pepper sections over slow fire until they turn dark red (the purpose of this step is to stimulate the aroma).",
+            "Transfer the dried chili peppers into a stone mortar and then crush roughly.",
+            "Transfer the crushed chili flakes to a bowl, add Sichuan peppercorn and toasted sesame seeds.",
+            "Add oil in wok and cut the spring onion into one inch sections and slice ginger. Fry over slow fire until they becomes brown.",
+            "Transfer them out and then add dried spices. Continue fry over slow fire until aromatic. Move the spices out.",
+            "Pour around 1/2 cup of hot oil into the chili fakes. Mix well.",
+            "Turn up the fire and heat the oil until almost smoky. Pour the remaining hot oil into the chili flakes.",
+            "Pour to a air-tight container, wait for 1-2 days until the red color is formed."
         ],
         "recommendation": [
-            "https://www.chinasichuanfood.com/easy-char-siu-with-hoisin-sauce/",
-            "https://www.chinasichuanfood.com/shui-zhu-beef/",
+            "https://www.chinasichuanfood.com/curry-fish-balls/",
+            "https://www.chinasichuanfood.com/fried-mantou-with-condensed-milk/",
+            "https://www.chinasichuanfood.com/peanut-dumplings-tang-yuan/"
+        ]
+    },
+    {
+        "dish_name": "Chinese Tea Eggs (Marbled Eggs)",
+        "dish_image": [
+            "https://www.chinasichuanfood.com/wp-content/uploads/2015/09/tea-eggs-33.jpg",
+            "https://www.chinasichuanfood.com/wp-content/uploads/2015/09/tea-eggs-33-500x500.jpg",
+            "https://www.chinasichuanfood.com/wp-content/uploads/2015/09/tea-eggs-33-500x375.jpg",
+            "https://www.chinasichuanfood.com/wp-content/uploads/2015/09/tea-eggs-33-480x270.jpg"
+        ],
+        "prep_time": "no details",
+        "cooking_time": "15 mins",
+        "total_time": "25 mins",
+        "ratings": "4.75 out of 5",
+        "calories": "102 kcal",
+        "ingredients": [
+            "8 to 10  eggs",
+            "Water as needed",
+            "1 tbsp. red tea or black tea leaves ( , you can also use two tea bags)",
+            "1.5 tbsp. light soy sauce",
+            "1 tbsp. dark soy sauce  ( , for better coloring )",
+            "1 tablespoon rock sugar",
+            "1/2 tbsp. salt",
+            "2 pieces star anises ( , note 3)",
+            "1 tsp. Sichuan peppercorn",
+            "1 thumb  ginger ( , smashed )",
+            "3-4  bay leaves",
+            "1/2 tbsp. fennel seeds (, optional)",
+            "1 stick Chinese Cinnamon"
+        ],
+        "cooking_methods": [
+            "Clean the eggs and then place in a deep sauce pot. Add enough cold water to cover. Start with medium fire, bring the content to a boiling and then let it&nbsp; simmer for 4 to 5 minutes (hard boiled based on how soft you want the yolk to be).  | for soft boiled eggs, place room temperature eggs gently with a help of strainer in boiling hot water, cook for 6 minutes. Transfer to cold or chilled water to cool down completely and then crack the eggs with a scoop carefully.",
+            "Transfer to cold or chilled water to cool down completely and then crack the eggs with a scoop carefully.&nbsp;Place the eggs in a pot with a lid.",
+            "In another the pot, add all seasoning&nbsp; (bay leaves, star anises,&nbsp;cassia bark, fennel seeds, salt and sugar ). Pour in around 800ml water and bring to a boiling, add tea leaves and simmer for 10 minutes.&nbsp;",
+            "For hard boiled eggs| pour the liquid to the the pot with cracked eggs. Soak overnight with lid covered.&nbsp;For soft boiled eggs| wait until the liquid becomes room temperature and then pour the liquid to soak the eggs overnight with lid covered.",
+            "Re-heat if necessary or serve directly with noodles, porridge or other food.&nbsp;"
+        ],
+        "recommendation": [
+            "https://www.chinasichuanfood.com/lanzhou-beef-noodle-soup/",
+            "https://www.chinasichuanfood.com/twice-cooked-fish/",
             "https://www.chinasichuanfood.com/gua-bao-taiwanese-pork-belly-buns/"
         ]
     }

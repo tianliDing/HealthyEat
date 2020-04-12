@@ -36,13 +36,13 @@ class Scraper:
 
         item["prep_time"] = "no details"
         if 'prepTme' in info:
-            item['prep_time'] = info['prepTime']
+            item['prep_time'] = info['prepTime'][2:4] + " mins"
         item["cooking_time"] = "no details"
         if 'cookTime' in info:
-            item['cooking_time'] = info['cookTime']
+            item['cooking_time'] = info['cookTime'][2:4] + " mins"
         item["total_time"] = "no details"
         if 'totalTime' in info:
-            item['total_time'] = info['totalTime']
+            item['total_time'] = info['totalTime'][2:4] + " mins"
 
         item['ratings'] = "no ratings yet"
         if 'aggregateRating' in info:
@@ -133,8 +133,9 @@ class Scraper:
         with open("recipes.json", "w", encoding="utf-8") as write_json:
             json.dump(data_recipe, write_json, indent=4)
 
-    def output_model_to_terminal():
+    def output_model_to_terminal(self):
         with open("recipes.json") as json_file:
             data = json.load(json_file)
         for key in data[0]:
-            print(key)
+            print("========" + key +": ")
+            print(data[0][key])

@@ -30,7 +30,6 @@ class Test(unittest.TestCase):
         # delete the inserted test from database
         for data in data_test:
             db_users.find_one_and_delete({"Username": data["Username"]})
-        print(db_users.count_documents({}))
 
     def test_write_to_database(self):
         """
@@ -62,15 +61,12 @@ class Test(unittest.TestCase):
         user = User()
         db_users = user.get_db_users()
         ori = db_users.count_documents({})
-        print(ori)
         data_file = pandas.read_excel('users.csv')
         number = 2
         data_csv = user.from_csv_to_database(data_file, number)
         now = db_users.count_documents({})
-        print(now)
         for data in data_csv:
             db_users.find_one_and_delete({"Username": data["Username"]})
-        print(db_users.count_documents({}))
         self.assertEqual(now, ori + number)
 
     def test_export_json_from_database(self):
@@ -159,7 +155,7 @@ class Test(unittest.TestCase):
         """
         scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
         scrap.output_model_to_terminal()
-        
+
 
 if __name__ == '__main__':
     unittest.main()
