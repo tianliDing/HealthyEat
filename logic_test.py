@@ -1,11 +1,36 @@
+"""
+test function of scraper and user class
+"""
 import unittest
+import json
+import requests
+import pandas
+from bs4 import BeautifulSoup
 from backend.users import User
 from backend.scraper import Scraper
-import pymongo
-import pandas
-import json
+
 
 class Test(unittest.TestCase):
+    """
+    a class for test
+    """
+    def test_insert_users(self):
+        """
+        test function of inserting users
+        """
+        user = User()
+        db_users = user.get_db_users()
+        data_test = [{"Username": "TESTUSER_0", "Password": "TESTPW_0"},
+                     {"Username": "TESTUSER_1", "Password": "TESTPW_1"},
+                     {"Username": "TESTUSER_2", "Password": "TESTPW_2"}]
+        before = db_users.count_documents({})
+        user.insert_users(data_test)
+        total = db_users.count_documents({})
+        self.assertEqual(total, before+3)
+        # delete the inserted test from database
+        for data in data_test:
+            db_users.find_one_and_delete({"Username": data["Username"]})
+        print(db_users.count_documents({}))
 
     def test_write_to_database(self):
         """
@@ -38,9 +63,9 @@ class Test(unittest.TestCase):
         db_users = user.get_db_users()
         ori = db_users.count_documents({})
         print(ori)
-        df = pandas.read_excel('users.csv')
+        data_file = pandas.read_excel('users.csv')
         number = 2
-        data_csv = user.from_csv_to_database(df, number)
+        data_csv = user.from_csv_to_database(data_file, number)
         now = db_users.count_documents({})
         print(now)
         for data in data_csv:
@@ -55,8 +80,8 @@ class Test(unittest.TestCase):
         user = User()
         db_users = user.get_db_users()
         data_test = [{"Username": "TESTUSER_0", "Password": "TESTPW_0"},
-                {"Username": "TESTUSER_1", "Password": "TESTPW_1"},
-                {"Username": "TESTUSER_2", "Password": "TESTPW_2"}]
+                     {"Username": "TESTUSER_1", "Password": "TESTPW_1"},
+                     {"Username": "TESTUSER_2", "Password": "TESTPW_2"}]
         db_users.insert_many(data_test)
         total = db_users.count_documents({})
         # export to json
@@ -68,6 +93,47 @@ class Test(unittest.TestCase):
         for data in data_test:
             db_users.find_one_and_delete({"Username": data["Username"]})
 
+    def test_add_calories(self):
+        """
+        test function of adding calories
+        """
+        html_doc = requests.get('https://www.chinasichuanfood.com/spicy-crispy-potatoes/')
+        soup = BeautifulSoup(html_doc.text, 'html.parser')
+        info = soup.find("script").string
+        info = json.loads(info)
+        scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
+        item = {}
+        scrap.add_calories(item, info)
+        self.assertEqual(item["calories"], "442 kcal")
+
+    def test_add_cooking_methods(self):
+        """
+        test getting cooking methods of a recipe
+        """
+        html_doc = requests.get('https://www.chinasichuanfood.com/spicy-crispy-potatoes/')
+        soup = BeautifulSoup(html_doc.text, 'html.parser')
+        info = soup.find("script").string
+        info = json.loads(info)
+        raw_method = info['recipeInstructions']
+        scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
+        item = {}
+        item["cooking_methods"] = []
+        scrap.add_cooking_methods(raw_method, item)
+        self.assertEqual(len(item["cooking_methods"]), 5)
+
+    def test_add_recommendation(self):
+        """
+        test getting related recipes
+        """
+        html_doc = requests.get('https://www.chinasichuanfood.com/spicy-crispy-potatoes/')
+        soup = BeautifulSoup(html_doc.text, 'html.parser')
+        item = {}
+        item['recommendation'] = []
+        all_rec = soup.find("section", {"id": "featured-post-20"}).findAll("a")
+        scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
+        scrap.add_recommendation(item['recommendation'], all_rec)
+        self.assertEqual(len(item['recommendation']), 3)
+
     def test_get_recipe_info(self):
         """
         test getting recipe information
@@ -77,9 +143,9 @@ class Test(unittest.TestCase):
         self.assertEqual(item['dish_name'], 'Spicy Crispy Potatoes')
         self.assertEqual(item['calories'], '442 kcal')
 
-    def test_add_recommendation(self):
+    def test_loop(self):
         """
-        test getting related recipes
+        test function of looping to get recipes
         """
         scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
         scrap.loop()
@@ -87,8 +153,5 @@ class Test(unittest.TestCase):
             data = json.load(json_file)
         self.assertEqual(len(data), 3)
 
-
-
 if __name__ == '__main__':
     unittest.main()
-

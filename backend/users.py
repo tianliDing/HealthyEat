@@ -41,7 +41,11 @@ class User:
             data.append(item)
         with open("users.json", "w", encoding='utf-8') as json_file:
             json.dump(data, json_file, indent=4)
-        
+
+    def insert_users(self, dict):
+        self.db_users.insert_many(dict)
+
+
 
 
 # user = User()

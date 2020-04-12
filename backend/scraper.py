@@ -47,27 +47,34 @@ class Scraper:
         item['ratings'] = "no ratings yet"
         if 'aggregateRating' in info:
             item['ratings'] = info['aggregateRating']['ratingValue'] + " out of 5"
+        # add calories
+        self.add_calories(item, info)
+        # add ingredients
+        item['ingredients'] = info['recipeIngredient']
+        # add cooking_methods
+        item['cooking_methods'] = []
+        raw_method = info['recipeInstructions']
+        self.add_cooking_methods(raw_method, item)
+        # add recommendations
+        item['recommendation'] = []
+        all_rec = soup.find("section", {"id": "featured-post-20"}).findAll("a")
+        self.add_recommendation(item['recommendation'], all_rec)
 
+        return item
+
+    def add_calories(self, item, info):
         item['calories'] = "no details"
         if 'nutrition' in info:
             if 'calories' in info['nutrition']:
                 item['calories'] = info['nutrition']['calories']
 
-        item['ingredients'] = info['recipeIngredient']
-        raw_method = info['recipeInstructions']
-
-        item['cooking_methods'] = []
+    def add_cooking_methods(self, raw_method, item):
         for method in raw_method:
             if 'itemListElement' in method:
                 for ele in method['itemListElement']:
                     item['cooking_methods'].append(ele['text'])
             else:
                 item['cooking_methods'].append(method['text'])
-
-        item['recommendation'] = []
-        all_rec = soup.find("section", {"id": "featured-post-20"}).findAll("a")
-        self.add_recommendation(item['recommendation'], all_rec)
-        return item
 
     def add_recommendation(self, rec_list, all_rec):
         """
@@ -108,7 +115,7 @@ class Scraper:
 
             if queue:
                 url = queue[0]
-                print(url)
+                # print(url)
                 queue = queue[1:]
                 item = self.get_recipe_info(url)
                 if item != {}:
@@ -125,7 +132,3 @@ class Scraper:
         print("Now writing into json format")
         with open("recipes.json", "w", encoding="utf-8") as write_json:
             json.dump(data_recipe, write_json, indent=4)
-
-
-# scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 101)
-# scrap.loop()
