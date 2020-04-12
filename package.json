@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pandas": "^0.0.3"
+  }
+}
