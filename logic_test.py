@@ -153,5 +153,13 @@ class Test(unittest.TestCase):
             data = json.load(json_file)
         self.assertEqual(len(data), 3)
 
+    def test_model(self):
+        """
+        test function of model
+        """
+        scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
+        scrap.output_model_to_terminal()
+        
+
 if __name__ == '__main__':
     unittest.main()

@@ -132,3 +132,9 @@ class Scraper:
         print("Now writing into json format")
         with open("recipes.json", "w", encoding="utf-8") as write_json:
             json.dump(data_recipe, write_json, indent=4)
+
+    def output_model_to_terminal():
+        with open("recipes.json") as json_file:
+            data = json.load(json_file)
+        for key in data[0]:
+            print(key)
