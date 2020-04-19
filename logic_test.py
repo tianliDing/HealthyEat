@@ -9,7 +9,6 @@ from bs4 import BeautifulSoup
 from backend.users import User
 from backend.scraper import Scraper
 
-
 class Test(unittest.TestCase):
     """
     a class for test
@@ -155,7 +154,6 @@ class Test(unittest.TestCase):
         """
         scrap = Scraper('https://www.chinasichuanfood.com/spicy-crispy-potatoes/', 3)
         scrap.output_model_to_terminal()
-
 
 if __name__ == '__main__':
     unittest.main()

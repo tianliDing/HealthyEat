@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "dotenv": "^8.2.0",
-    "pandas": "^0.0.3"
+    "pandas": "^0.0.3",
+    "react-router": "^5.1.2",
+    "semantic-ui-react": "^0.88.2"
   }
 }
