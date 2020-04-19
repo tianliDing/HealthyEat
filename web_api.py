@@ -10,14 +10,17 @@ from flask import Flask, request, render_template, abort, jsonify
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
-# import data from user csv
 user = User()
 db_users = user.get_db_users()
-data_file = pandas.read_excel('users.csv')
-number = 7
-data_csv = user.from_csv_to_database(data_file, number)
+# data_file = pandas.read_excel('users.csv')
+# number = 7
+# data_csv = user.from_csv_to_database(data_file, number)
 
 def get_user_query():
+    """
+    helper function to get users query
+    @return: query parsed
+    """
     val = request.args
     query = {}
     for params in val:
@@ -30,7 +33,7 @@ def get_user_query():
 # # @login_required
 def get_users():
     """
-    get/put/post users
+    get/put/post/delete users
     @return: json data
     """
     if request.method == 'GET':
@@ -64,10 +67,12 @@ def get_users():
     else:
         return 400
 
-
 @app.route('/api/home')
 def get_recipes():
-    # get recipes
+    """
+    get recipes from home
+    @return: json data with id
+    """
     if request.method == 'GET':
         with open("recipes.json") as json_file:
             data = json.load(json_file)
@@ -76,9 +81,12 @@ def get_recipes():
         for item in data:
             item.__setitem__("_id", id)
             id += 1
-        # result = list(data)
         return {'data': data}, 200
 
-@app.route('/')
+@app.route('/api/index')
 def get_index():
-    return "hello world", 200
+    """
+    get recipes from index page
+    @return: json data for stest
+    """
+    return {'data': {"dish_name": "Spicy Crispy Potatoes"}}, 200
