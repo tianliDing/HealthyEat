@@ -9,11 +9,14 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(80px, auto);
 `; 
+
+/**
+ * Render User page 
+ * to be developed
+ */
 export const User = () => (
   <GridWrapper>
-    <h2>About Page</h2>
-    <p>State at ceiling lay on arms while you're using the keyboard so this human feeds me.</p>
-    <p>I am a kitty cat, sup, feed me, no cares in the world I am a kitty cat, sup, feed me, no cares in the world I am a kitty cat, sup, feed me, no cares in the world I am a kitty cat, sup, feed me, no cares in the world I am a kitty cat, sup, feed me, no cares in the world I am a kitty cat, sup, feed me, no cares in the world</p>
-    <p>Meow meow, I tell my human purr for no reason but to chase after</p>
+    <h2>USER Page</h2>
+    <p>to be developed.</p>
   </GridWrapper>
 )

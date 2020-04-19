@@ -7,17 +7,13 @@ import 'semantic-ui-css/semantic.min.css';
  * information include: dish name, image, ratings, cooking time, total time, calories, ingredients, cooking method
  */
 export class Recipe extends Component {
-    constructor(props){
-        super(props)
-    }
-
     render(){
         const {recipe} = this.props
         console.log(this.props.recipe)
         return(
             <div className="total" style={{margin:100}}>
                 <div className="container-holder" style={{width: 400, marginLeft:"auto", marginRight:"auto"}}>
-                    <img src={recipe.dish_image[0]} style={{width: 400}}/>
+                    <img src={recipe.dish_image[0]} alt="dish" style={{width: 400}}/>
                 </div>
 
                 <div className="info" style={{marginTop:50}}>
@@ -41,8 +37,7 @@ export class Recipe extends Component {
                         <ul>
                             {recipe.cooking_methods.map((method, index) =>
                             <p as='h5'> {index+1}. {method} </p>
-                    )}
-                            )}
+                             )}
                         </ul>
                     </p>
                     </Container>
