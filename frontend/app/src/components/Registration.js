@@ -61,7 +61,8 @@ export function Registration(){
   }
 
   return (
-      <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
+    <div style={{textAlign:"center", marginTop:50}}>
+      <div className="card col-12 col-lg-4 login-card mt-2 justify-content-center" style={{marginLeft:400}}>
         <form>
           <div className="form-group text-left">
           <label htmlFor="exampleInputEmail1">Email address</label>
@@ -110,6 +111,7 @@ export function Registration(){
           {state.success === "no" ? "Already have an account? Please click Login on the right corner": 
                                     "Successfully created a new account, please login!"}
         </p>
+    </div>
     </div>
   );
 }

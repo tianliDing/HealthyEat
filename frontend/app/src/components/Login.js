@@ -67,72 +67,54 @@ export function Login(){
 
     return (
         // <Router>
+
         <div >
             {state.login_sucess === "no"? 
-            <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-                <form>
-                <div className="form-group text-left">
-                <label htmlFor="exampleInputEmail1">Email address</label>
-                <input type="email" 
-                        className="form-control" 
-                        id="email" 
-                        aria-describedby="emailHelp" 
-                        placeholder="Enter email"
-                        value={state.email}
-                        onChange={handleChange}
-                />
-                </div>
-                <p>
-                    {state.email_success ? "Please enter registered email": "No matched Username! Please register first!"}
-                </p>
-                <div className="form-group text-left">
-                    <label htmlFor="exampleInputPassword1">Password</label>
-                    <input type="password" 
-                        className="form-control" 
-                        id="password" 
-                        placeholder="Password"
-                        value={state.password}
-                        onChange={handleChange} 
+            <div style={{textAlign:"center", marginTop:50}}>
+                <div className="card col-12 col-lg-4 login-card mt-2 hv-center"  style={{marginLeft:400}}>
+                    <form>
+                    <div className="form-group text-left">
+                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <input type="email" 
+                            className="form-control" 
+                            id="email" 
+                            aria-describedby="emailHelp" 
+                            placeholder="Enter email"
+                            value={state.email}
+                            onChange={handleChange}
                     />
-                </div>
-                <p>
-                    {state.pw_success ?  "Please enter correct password": "Wrong Password! Try again!"}
-                </p>
-                <button 
-                    type="submit" 
-                    className="btn btn-primary"
-                    onClick={handleSubmitClick}
-                >
-                    Login
-                </button>
-                </form>
-                <div className="mt-2">
-                    <span>Do not have an account? Please click Register on the right corner.</span>
+                    </div>
+                    <p>
+                        {state.email_success ? "Please enter registered email": "No matched Username! Please register first!"}
+                    </p>
+                    <div className="form-group text-left">
+                        <label htmlFor="exampleInputPassword1">Password</label>
+                        <input type="password" 
+                            className="form-control" 
+                            id="password" 
+                            placeholder="Password"
+                            value={state.password}
+                            onChange={handleChange} 
+                        />
+                    </div>
+                    <p>
+                        {state.pw_success ?  "Please enter correct password": "Wrong Password! Try again!"}
+                    </p>
+                    <button 
+                        type="submit" 
+                        className="btn btn-primary"
+                        onClick={handleSubmitClick}
+                    >
+                        Login
+                    </button>
+                    </form>
+                    <div className="mt-2">
+                        <span>Do not have an account? Please click Register on the right corner.</span>
+                    </div>
                 </div>
             </div>
         :
-            // <div className="users">
-            //     <SplitPane split="vertical">
-            //         <Card>
-            //             <Image src='https://www.vexels.com/media/users//3/145908/raw/52eabf633ca6414e60a7677b0b917d92.jpg' wrapped ui={false} />
-            //             <Card.Content>
-            //             <Card.Header>Username/Email: </Card.Header>
-            //             <Card.Description>{state.email}</Card.Description>
-            //             {/* <Card.Description>
-            //                 {state.calories[0]}
-            //             </Card.Description> */}
-            //             </Card.Content>
-            //         </Card>
-            //     {/* <Pane initialSize="75%">You can use a Pane component</Pane> */}
-            //     <div></div>
-            //     {/* 
-            //         <Pane initialSize="200px">You can use a Pane component</Pane>
-                    
-            //         <Pane initialSize="25%" minSize="10%" maxSize="500px">Using a Pane allows you to specify any constraints
-            //             directly</Pane>
-            //     </SplitPane> */}
-            //     </SplitPane>
-            // </div>
+            
             <User username={state.email} calories={state.calories} weight={state.weight}/>
         }
         </div>
