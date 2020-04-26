@@ -1,0 +1,39 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 800px;
+}
+  
+.leftpane {
+    margin-top: 40px;
+    width: 30%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+  
+.rightpane {
+    outline-color: black;
+    /* margin-top: 40px; */
+    width: 60%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.rightpane p {
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    /* text-decoration-color: rgb(56, 55, 55); */
+    font-weight: bold;
+    color: rgba(5, 4, 4, 0.575);
+    margin-top: 40px;
+    /* padding-top: 40px; */
+    margin-bottom: 0px;
+}
