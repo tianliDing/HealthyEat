@@ -34,6 +34,13 @@ body, html {
     font-weight: bold;
     color: rgba(5, 4, 4, 0.575);
     margin-top: 40px;
+    margin-left: 150px;
     /* padding-top: 40px; */
     margin-bottom: 0px;
+}
+.rightpane hr{
+    margin-left: 150px; 
+}
+.rightpane .ui form{
+    margin-left: 150px; 
 }

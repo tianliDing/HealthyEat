@@ -7,11 +7,11 @@ import { withRouter } from "react-router-dom";
 import { User } from './User'
 
 /**
- * Render User page 
- * to be developed
+ * Render Login page 
+ * login with username and password
  */
 // export class User extends Component {
-export function Login(props){
+export function Login(){
   const [state , setState] = useState({
     email : "",
     password : "",
@@ -41,9 +41,11 @@ export function Login(props){
         .then(function (response) {
             if(response.status === 200){
                 console.log(response.data.data)
+                console.log(state.password)
+                console.log(response.data.data.length)
                 if(response.data.data.length === 0){
                     console.log("it is nothing ")
-                    setState({email_success: false, pw_success: true})
+                    setState({email_success: false, pw_success: true, login_sucess: "no"})
                 }else if (state.password === response.data.data[0].Password){
                     console.log("password match!")
                     setState({login_sucess: "yes",
@@ -51,7 +53,7 @@ export function Login(props){
                               calories: response.data.data[0].Calories,
                               weight: response.data.data[0].Weight  })
                 }else{
-                    setState({pw_success: false, email_success: true})
+                    setState({pw_success: false, email_success: true, login_sucess: "no"})
                 }
             } else{
                 console.log("what?")

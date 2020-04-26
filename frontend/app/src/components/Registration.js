@@ -1,13 +1,11 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-// import { Redirect } from "react-router-dom";
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-// import { Home } from './Home'
+
 
 /**
  * Render Register page 
  */
-export function Registration(props){
+export function Registration(){
   const [state , setState] = useState({
     email : "",
     password : "",
@@ -106,7 +104,7 @@ export function Registration(props){
           </button>
         </form> 
         <p>
-          {state.match_pw === "yes"? "": "Password unmatch!"}
+          {state.match_pw === "yes"? "": "Password mismatching!"}
         </p>
         <p>
           {state.success === "no" ? "Already have an account? Please click Login on the right corner": 
