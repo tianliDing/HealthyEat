@@ -3,20 +3,10 @@
 
 ## introduction
 A website of recipe with recipes scrapped from "www.chinasichuanfood.com"
+Users can also register and login to their accounts, then add daily weight and calories, and see interactive graphs.
 
 ## installation
-run "git clone https://gitlab.engr.illinois.edu/td2/sp20-cs242-project.git" in your terminal
+run "git clone https://github.com/tianliDing/HealthyEat.git/" in your terminal
 
 ## How to use
-### Scraper
-- Type "python main.py -h" in your command line  
-
-- Then you will get a help message about the usage  
-
-- We support scraping recipes no more than 2000, so please do not pass this value  
-
-- When you correctly entered number and URL in terminal, it will start scrape.    
-
-- At the same time, you will see how many percent it finished currently.  
-
-- When you see message "finished!", we could check the database and json file. We all done!
+In order to run API, please type "export FLASK_APP=web_api.py" then "flask run" in your command line.
